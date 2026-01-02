@@ -1,0 +1,15 @@
+{
+  "name": "Neon Tic-Tac-Toe",
+  "short_name": "NeonTTT",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#00f3ff",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/566/566294.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

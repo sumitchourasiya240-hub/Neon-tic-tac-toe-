@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Tic-Tac-Toe</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="manifest" href="manifest.json">
+
+    <meta name="theme-color" content="#050505">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="neon-nav">
+            <button onclick="showPage('home')">Home</button>
+            <button onclick="showPage('levels')">Difficulty</button>
+        </nav>
+
+        <section id="home" class="page active">
+            <h1 class="neon-text-blue">NEON GRID</h1>
+            <button class="neon-btn blue" onclick="showPage('levels')">ENTER SYSTEM</button>
+        </section>
+
+        <section id="levels" class="page">
+            <h2 class="neon-text-pink">CHOOSE MODE</h2>
+            <button class="neon-btn blue" onclick="startGame('easy')">EASY AI</button>
+            <button class="neon-btn green" onclick="startGame('hard')">HARD AI</button>
+            <button class="neon-btn pink" onclick="startGame('pvp')">PLAYER VS PLAYER</button>
+        </section>
+
+        <section id="game" class="page">
+            <div id="status" class="neon-text-blue">Player X's Turn</div>
+            <div class="board" id="board">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+            </div>
+            <button class="neon-btn blue" onclick="resetGame()">REBOOT BOARD</button>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
